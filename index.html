@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- navbar -->
     <header>
       <div class="navbar bg-base-100 shadow-sm bg-[#BADEFF]">
         <div class="navbar-start">
@@ -60,15 +61,21 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a>Item 1</a></li>
               <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
+                <a href="" class=""
+                  ><i class="fa-solid fa-circle-question"></i>FAQ</a
+                >
               </li>
-              <li><a>Item 3</a></li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-book-open"></i>Learn</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-right-from-bracket"></i>Logout</a
+                >
+              </li>
             </ul>
           </div>
           <a href="" class="flex items-center gap-1">
@@ -100,9 +107,11 @@
     </header>
     <main class="mx-10 my-10">
       <!-- hero section -->
-      <div class="flex items-center">
-        <div class="space-y-4">
-          <h2 class="text-6xl">
+      <div
+        class="flex flex-col-reverse md:flex-row lg:flex gap-5 justify-between items-center my-10"
+      >
+        <div class="space-y-4 text-center md:text-left lg:text-left">
+          <h2 class="text-5xl font-bold">
             <span class="text-[#00BCFF]">English</span> is Easy!!
           </h2>
           <p>
@@ -119,10 +128,22 @@
           <img src="assets/hero-student.png" alt="" />
         </div>
       </div>
-      <div></div>
-      
-      <!-- Questions -->
+
       <div>
+        <h1 class="text-center text-4xl font-bold mb-12">
+          <span class="text-[#00BCFF]">Let's</span> Learn Vocabulary
+        </h1>
+        <div id="level-container" class="flex flex-wrap gap-4 justify-center">
+
+        </div>
+      </div>
+
+      <div id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10">
+
+      </div>
+
+      <!-- Questions -->
+      <div class="mt-10">
         <h1 class="text-center text-4xl font-bold mb-12">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h1>
@@ -192,7 +213,7 @@
       </div>
     </main>
     <!-- footer -->
-    <footer class="bg-[#cae1f7] flex items-center justify-between mt-20 p-8">
+    <footer class="bg-slate-100 flex items-center justify-between mt-20 p-8">
       <div>
         <a href="" class="flex items-center gap-1">
           <span class="text-lg font-bold">English</span>
@@ -204,12 +225,15 @@
       </div>
       <div>
         <p>Follow us</p>
-        <div class="flex gap-3">
+        <div class="flex gap-4">
           <img src="assets/github-thumb.png" alt="" />
           <img src="assets/instagram-thumb.png" alt="" />
           <img src="assets/youtube-thumb.png" alt="" />
         </div>
       </div>
     </footer>
+
+
+    <script src="script/index.js"></script>
   </body>
 </html>
