@@ -133,14 +133,42 @@
         <h1 class="text-center text-4xl font-bold mb-12">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabulary
         </h1>
-        <div id="level-container" class="flex flex-wrap gap-4 justify-center">
+        <div
+          id="level-container"
+          class="flex flex-wrap gap-4 justify-center"
+        ></div>
+      </div>
 
+      <div
+        id="word-container"
+        class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
+      >
+        <div
+          class="text-center space-y-4 col-span-full bg-sky-200 rounded-xl py-10 font-bangla"
+        >
+          <p class="font-medium text-[#79716B]">
+            আপনি এখনো কোন Lesson Select করেন নি
+          </p>
+          <h2 class="text-3xl font-bold">একটি Lesson Select করুন।</h2>
         </div>
       </div>
 
-      <div id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10">
+      <!-- Open the modal using ID.showModal() method -->
 
-      </div>
+      
+      <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
 
       <!-- Questions -->
       <div class="mt-10">
@@ -232,7 +260,6 @@
         </div>
       </div>
     </footer>
-
 
     <script src="script/index.js"></script>
   </body>
